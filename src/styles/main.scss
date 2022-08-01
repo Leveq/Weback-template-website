@@ -8,6 +8,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 
 $primary-color: #f4f4f4; // Background color
 $secondary-color: #203354; // Accent colors
+$light-secondary: #34538a; // Lighter secondary
 $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 
 * {
@@ -263,7 +264,7 @@ nav {
 
 input::placeholder {
   font-weight: bold;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 /* Style inputs */
@@ -323,12 +324,29 @@ textarea {
 
 /* Add a background color to the submit button on mouse-over */
 input[type="submit"]:hover {
-  background-color: #4167ab;
+  background-color: $light-secondary;
   transition: ease-in 0.2s;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus {
+    outline: 0;
+  }
 }
+
 input[type="reset"]:hover {
-  background-color: #4167ab;
+  background-color: $light-secondary;
   transition: ease-in 0.2s;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 .footer {
@@ -358,14 +376,6 @@ footer {
   padding: 14px 40px;
   font-size: 16px;
   cursor: pointer;
-
-  &:active {
-    transform: scale(0.98);
-  }
-
-  &:focus {
-    outline: 0;
-  }
 }
 
 @media (max-width: 1260px) {
@@ -383,7 +393,7 @@ footer {
       align-items: center;
     }
     .logo {
-      padding: .5rem;
+      padding: 0.5rem;
     }
   }
 
@@ -400,9 +410,8 @@ footer {
   .services {
     padding: 1rem 0.5rem;
     min-height: fit-content;
-    
-    @media (max-width: 360px) {
 
+    @media (max-width: 360px) {
       .service__item {
         max-width: 200px;
       }
@@ -471,21 +480,22 @@ footer {
       text-align: center;
     }
 
-    .about__3, .about__4 {
+    .about__3,
+    .about__4 {
       padding-bottom: 1rem;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       padding-bottom: 1rem;
     }
   }
 
   .contact {
     margin: 0 0.5rem;
-    
+
     h1 {
       font-size: 3rem;
     }
   }
-  
 }

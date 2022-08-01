@@ -57,7 +57,7 @@ module.exports = {
       templateParameters: {
         business_name: `John Smith's Business`,
         name: "John Smith",
-        email: "john@email.com",
+        email: "your@email",
         owner_desc: "",
         phone_num: "(111) 111-111",
         address: "1 First street",

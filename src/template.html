@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <header id="home">
+      <nav id="navbar" class="navbar top">
+        <div class="nav__container">
+          <a class="logo" href="index.html">
+            <img id="logoImg" alt="Logo" />
+          </a>
+          <div class="links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contactus">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero__content">
+          <h1>John Smith's Business</h1>
+          <h2>My headline here</h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="services" class="services">
+        <h1>Services</h1>
+        <div class="grid__container">
+          <ul class="services__grid">
+            <li class="service__item item__1">
+              <div><i class="icon fa-solid fa-book fa"></i></div>
+              <div><p>QuickBooks for Individuals and Businesses</p></div>
+            </li>
+            <li class="service__item">
+              <div><i class="icon fa-solid fa-house-signal"></i></div>
+              <div><p>Remote/In-House Bookkeeping</p></div>
+              
+              
+            </li>
+            <li class="service__item">
+              <i class="icon fa-solid fa-paperclip"></i>
+              <p>Financial Statement Preparation</p>
+            </li>
+            <li class="service__item">
+              <i class="icon fa-solid fa-briefcase"></i>
+              <p>Clean/Setup Books</p>
+            </li>
+            <li class="service__item">
+              <i class="icon fa-solid fa-university"></i>
+              <p>Bank Reconciliation</p>
+            </li>
+            <li class="service__item">
+              <i class="icon fa-solid fa-check"></i>
+              <p>And more!</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="about" class="about">
+        <div class="about__1">
+          <div>
+            <img id="profilePic" alt="Profile picture" />
+          </div>
+          <div class="about__3">
+            <h1>John Smith</h1>
+            <h2>Our mission is to do a great job helping your business!</h2>
+          </div>
+        </div>
+        <div class="about__2">
+          <div><img id="quickbooks" alt="Quickbooks logo" /></div>
+          <div class="about__4"><h1>Quickbooks Certified Pro Advisor</h1></div>
+        </div>
+      </div>
+      <div id="contactus" class="contact">
+        <h1>Contact us</h1>
+        <div class="form__container">
+          <form action="">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your message"
+              rows="6"
+              required
+            ></textarea>
+            <input class="btn" type="submit" name="" value="Send" />
+            <input class="btn" type="reset" value="Reset" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="footer">
+      <footer>© John Smith's Business - All rights reserved.</footer>
+    </div>
+  </body>
+</html>

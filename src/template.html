@@ -23,17 +23,17 @@
       </nav>
       <div class="hero">
         <div class="hero__content">
-          <h1>John Smith's Business</h1>
-          <h2>My headline here</h2>
+          <h1 class="animate__animated animate__backInDown"><%= business_name %></h1>
+          <h2 class="section animate__animated animate__delay-1s"><%= headline %></h2>
         </div>
       </div>
     </header>
     <main>
       <div id="services" class="services">
-        <h1>Services</h1>
+        <h1 class="section animate__animated">Services</h1>
         <div class="grid__container">
-          <ul class="services__grid">
-            <li class="service__item item__1">
+          <ul class="services__grid section animate__animated">
+            <li class="service__item">
               <div><i class="icon fa-solid fa-book fa"></i></div>
               <div><p>QuickBooks for Individuals and Businesses</p></div>
             </li>
@@ -63,24 +63,24 @@
         </div>
       </div>
       <div id="about" class="about">
-        <div class="about__1">
+        <div class="about__1 section animate__animated">
           <div>
             <img id="profilePic" alt="Profile picture" />
           </div>
           <div class="about__3">
-            <h1>John Smith</h1>
-            <h2>Our mission is to do a great job helping your business!</h2>
+            <h1><%= name %></h1>
+            <h2><%= description %></h2>
           </div>
         </div>
-        <div class="about__2">
+        <div class="about__2 section animate__animated">
           <div><img id="quickbooks" alt="Quickbooks logo" /></div>
           <div class="about__4"><h1>Quickbooks Certified Pro Advisor</h1></div>
         </div>
       </div>
-      <div id="contactus" class="contact">
-        <h1>Contact us</h1>
+      <div id="contactus" class="section contact">
+        <h1 class="section animate__animated">Contact us</h1>
         <div class="form__container">
-          <form action="">
+          <form class="section animate__animated" action="">
             <input
               type="text"
               name="name"
@@ -116,7 +116,7 @@
       </div>
     </main>
     <div class="footer">
-      <footer>© John Smith's Business - All rights reserved.</footer>
+      <footer>© <%= business_name %> - All rights reserved.</footer>
     </div>
   </body>
 </html>

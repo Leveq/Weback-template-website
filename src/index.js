@@ -1,4 +1,4 @@
-import 'jquery';
+import "jquery";
 import "./styles/main.scss";
 import profileImage from "./assets/profileImage.jpeg";
 import quickbooksLogo from "./assets/quickbooksLogo.png";
@@ -34,17 +34,30 @@ window.onscroll = function () {
 };
 
 // Smooth Scrolling
-$('#navbar a, .btn').on('click', function (e) {
-    if (this.hash !== '') {
-      e.preventDefault();
+$("#navbar a, .btn").on("click", function (e) {
+  if (this.hash !== "") {
+    e.preventDefault();
 
-      const hash = this.hash;
+    const hash = this.hash;
 
-      $('html, body').animate(
-        {
-          scrollTop: $(hash).offset().top - 100,
-        },
-        800
-      );
-    }
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top - 100,
+      },
+      800
+    );
+  }
+});
+
+// Intersection observer
+const sections = document.querySelectorAll(".section");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("animate__fadeIn", entry.isIntersecting);
   });
+});
+
+sections.forEach((section) => {
+  observer.observe(section);
+});

@@ -3,6 +3,8 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~animate.css/source/_base.css";
+@import "~animate.css/animate.css";
 
 $primary-color: #f4f4f4; // Background color
 $secondary-color: #203354; // Accent colors
@@ -257,6 +259,11 @@ nav {
   justify-content: center;
   height: 100%;
   width: 100%;
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity: .9;
 }
 
 /* Style inputs */

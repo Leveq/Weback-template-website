@@ -14,6 +14,12 @@ Includes the following features...
 
 ## Usage
 
+Install dependencies
+
+```
+  npm install
+```
+
 Run Dev Server (Port 3000)
 
 ```
